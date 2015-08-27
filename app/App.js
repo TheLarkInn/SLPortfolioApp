@@ -1,5 +1,7 @@
 import React from 'react';
 import SLNavBar from './components/SLNavBar/SLNavBar.js';
+import SLMainContent from './components/SLMainContent/SLMainContent.js';
+import SLFooter from './components/SLFooter/SLFooter.js';
 
 // Styles
 import './App.less';
@@ -11,10 +13,8 @@ export default class App extends React.Component {
 				<header className='sl-portfolio-app--header'>
 					<SLNavBar />
 				</header>
-
-
-
-				
+				<SLMainContent />
+				<SLFooter />	
 			</div>
 		);
 	}
