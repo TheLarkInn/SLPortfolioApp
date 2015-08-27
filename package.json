@@ -4,13 +4,8 @@
   "description": "Sean Larkin Portfolio App",
   "main": "index.js",
   "scripts": {
-    "test": "slptest",
-    "clean": "rm -rf lib",
-    "watch-js": "./node_modules/.bin/babel src -d lib --experimental -w",
-    "dev-server": "node lib/server/webpack",
-    "server": "nodemon lib/server/server",
-    "start": "npm run watch-js & npm run dev-server & npm run server",
-    "build": "npm run clean && ./node_modules/.bin/babel src -d lib --experimental"
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
   },
   "repository": {
     "type": "git",
@@ -34,6 +29,8 @@
     "react-router": "^0.13.3",
     "webpack": "^1.12.0",
     "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^1.10.1"
   }
-
 }
