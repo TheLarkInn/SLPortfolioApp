@@ -6,7 +6,7 @@ module.exports = {
 	entry: ['webpack/hot/dev-server', path.resolve(__dirname, 'app/main.js')],
 	resolve: {
 		alias: {
-			'react': pathToReact
+			'react': pathToReact //loads react.min.js making dev builds faster
 		}
 	},
 	output: {
@@ -19,7 +19,7 @@ module.exports = {
 	module: {
     	loaders: [
     		{ test: /\.jsx?$/, loader: 'babel'},
-    		{ test: /\.css$/,  loader: 'style!css!cssnext'}
+    		{ test: /\.less$/,  loader: 'style!css!cssnext!less'}
     	],
     	noParse: [pathToReact]
   	}
