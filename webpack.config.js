@@ -13,11 +13,14 @@ module.exports = {
 		path: path.resolve(__dirname, 'build'),
 		filename: 'bundle.js'
 	},
+	cssnext: {
+		browsers: "last 2 versions",
+	},
 	module: {
-    	loaders: [{
-      		test: /\.jsx?$/, // A regexp to test the require path. accepts either js or jsx
-      		loader: 'babel'
-    	}],
+    	loaders: [
+    		{ test: /\.jsx?$/, loader: 'babel'},
+    		{ test: /\.css$/,  loader: 'style!css!cssnext'}
+    	],
     	noParse: [pathToReact]
-  }
+  	}
 }
