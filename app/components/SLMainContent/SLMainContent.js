@@ -11,7 +11,7 @@ export default class SLMainContent extends React.Component {
 		return (
 			<div className='sl-main-content'>
 				<h1 className='sl-main-content--header'>
-					<strong>WEB DEVELOPER</strong>& SOFTWARE ENGINEER
+					<strong>WEB DEVELOPER</strong><span className='sl-main-content--header_accent'>&</span> SOFTWARE ENGINEER
 				</h1>
 
 				<SLButton buttonText='LEARN MY STORY' onClick={this._navigateToMyStory} />

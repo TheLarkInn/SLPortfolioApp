@@ -7,12 +7,12 @@
 	color: @primaryColor;
 
 	&:hover {
-		background-color: @primaryColor;
-		color: @secondaryColor;
+		border: 1px @accentColor solid;
+		background-color: @secondaryColor;
+		color: @accentColor;
 	}
 
-	transition: background-color 100ms ease-in;
-
+	transition: background-color 60ms ease-in;
 }
 
 .sl-button_centered {
@@ -34,5 +34,5 @@
 		color: @primaryColor;
 	}
 
-	transition: background-color 100ms ease-in;
+	transition: background-color 60ms ease-in;
 }
