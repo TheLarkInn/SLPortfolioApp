@@ -22,7 +22,14 @@ module.exports = {
 	},
 	module: {
     	loaders: [
-    		{ test: /\.jsx?$/, loader: 'babel'},
+    		{ 
+    			test: /\.jsx?$/, 
+    			loader: 'babel', 
+    			query: {
+    				optional: ['es7.classProperties'],
+    				stage: 0
+    			}
+    		},
     		{ test: /\.less$/,  loader: 'style!css!cssnext!less'},
     		{ test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
                 loader: "file" }

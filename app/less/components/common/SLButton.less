@@ -1,0 +1,38 @@
+.sl-button {
+	.button-font;
+	padding: 10px 15px;
+	border: 1px @primaryColor solid;
+	border-radius: 10px;
+	cursor: pointer;
+	color: @primaryColor;
+
+	&:hover {
+		background-color: @primaryColor;
+		color: @secondaryColor;
+	}
+
+	transition: background-color 100ms ease-in;
+
+}
+
+.sl-button_centered {
+	display: block;
+	margin: 0 auto;
+}
+
+.sl-button_my-story {
+	width: 140px;
+	text-align: center;
+}
+
+.sl-button_nav-button {
+	background-color: @primaryColor;
+	color: @secondaryColor;
+	
+	&:hover {
+		background-color: @secondaryColor;
+		color: @primaryColor;
+	}
+
+	transition: background-color 100ms ease-in;
+}

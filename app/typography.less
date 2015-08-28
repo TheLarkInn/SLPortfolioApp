@@ -7,8 +7,16 @@
 	font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.primaryFontFamily {
 	font-family: 'Raleway', sans-serif;
+}
+
+.secondaryFontFamily {
+	font-family: 'NixieOne', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	.primaryFontFamily;
 	font-weight: 100;
 	color: @primaryTextColor;
 }
@@ -18,6 +26,10 @@ strong {
 }
 
 p, ul, li, label, input, header, footer, nav {
-	font-family: 'NixieOne', Arial, sans-serif;
+	.primaryFontFamily;
 	color: @primaryTextColor;
 } 
+
+.button-font {
+	.primaryFontFamily;
+}
