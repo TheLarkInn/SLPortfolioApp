@@ -1,0 +1,33 @@
+.sl-social-links {
+	margin: 0 auto;
+	width: 300px;
+	padding-top: 5px;
+	text-align: center;
+
+	a {
+		padding: 5px;
+		position: relative; 
+		&:hover {
+			span {
+				display: block;
+			}
+
+			color: @accentColor;
+		}
+	
+		span {
+			.secondaryFontFamily;
+			font-size: .4em;
+			position: absolute;
+			display: none;
+			top: 40px;
+		    bottom: 0;
+		    left: -25px;
+		    right: 0;
+		    width: 90px;
+		    margin: 0 auto;
+		    text-align: center;
+		}
+	}
+
+}
