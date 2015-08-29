@@ -4,7 +4,7 @@ import SLContentSlide from '../common/SLContentSlide.js';
 import SLHomeView from './SLHomeView.js';
 import SLAboutView from './SLAboutView.js';
 import SLWorkView from './SLWorkView.js';
-import SLContactView from './SLWorkView.js';
+import SLContactView from './SLContactView.js';
 
 export default class SLMainContent extends React.Component {
 	constructor(props) {
@@ -21,18 +21,10 @@ export default class SLMainContent extends React.Component {
 
 	render() {
 		let activeSlide = [
-			<SLContentSlide>
-				<SLHomeView />
-			</SLContentSlide>,
-			<SLContentSlide>
-				<SLAboutView />
-			</SLContentSlide>,
-			<SLContentSlide>
-				<SLWorkView />
-			</SLContentSlide>,
-			<SLContentSlide>
-				<SLContactView />
-			</SLContentSlide>,
+			<SLContentSlide><SLHomeView /></SLContentSlide>,
+			<SLContentSlide><SLAboutView /></SLContentSlide>,
+			<SLContentSlide><SLWorkView /></SLContentSlide>,
+			<SLContentSlide><SLContactView /></SLContentSlide>,
 		];
 
 		return (
