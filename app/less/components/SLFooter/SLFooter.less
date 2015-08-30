@@ -4,6 +4,12 @@
 	width: 100%;
 	background-color: @primaryColor;
 	color: @secondaryTextColor;
+	position: fixed;
+	bottom: 0;
+
+	@media (min-width: 640px) {
+		position: relative;
+	}
 }
 
 .sl-footer--name-logo {

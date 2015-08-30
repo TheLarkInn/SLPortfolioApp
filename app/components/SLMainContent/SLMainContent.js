@@ -28,7 +28,7 @@ export default class SLMainContent extends React.Component {
 		];
 
 		return (
-			<div className='sl-main-content'>
+			<div className={'sl-main-content main-content-border-0' + this.props.activeSlideIndex }>
 				{activeSlide[this.props.activeSlideIndex]}
 			</div>
 		);
