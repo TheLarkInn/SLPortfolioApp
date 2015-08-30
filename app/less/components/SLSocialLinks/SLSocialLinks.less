@@ -1,18 +1,30 @@
 .sl-social-links {
+	display: flex;
 	margin: 0 auto;
-	width: 300px;
+	width: 100%;
 	padding-top: 5px;
 	text-align: center;
 
+	@media (min-width: 640px) {
+		display: block;
+	}
+
 	a {
+		flex: 1;
 		padding: 5px;
 		position: relative; 
-		&:hover {
-			span {
-				display: block;
+		text-decoration: none;
+		color: @secondaryColor;
+		&:visited {
+			color: @secondaryColor;
+		}
+		@media (min-width: 640px) {
+			&:hover {
+				span {
+					display: block;
+				}
 			}
 		}
-	
 		span {
 			.secondaryFontFamily;
 			font-size: .4em;

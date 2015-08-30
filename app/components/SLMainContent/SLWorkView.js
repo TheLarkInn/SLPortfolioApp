@@ -12,8 +12,11 @@ export default class SLWorkView extends React.Component {
 
 	render() {
 		return (
-			<div clasName='sl-work-view'>
+			<div className='sl-work-view'>
 				<h3>WORK</h3>
+				<div className='sl-work-view--workgrid'>
+					
+				</div>
 			</div>
 		);
 	}

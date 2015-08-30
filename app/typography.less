@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:700,400,100);
-@import url(https://fonts.googleapis.com/css?family=Vollkorn:100,400,700);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400);
 
 .primaryFontFamily {
 	font-family: 'Raleway', sans-serif;
@@ -15,11 +15,21 @@ h1, h2, h3, h4, h5, h6 {
 	color: @primaryTextColor;
 }
 
+h2 {
+	font-weight: 100;
+	font-size: 2.4em;
+}
+
 strong {
 	font-weight: 700;
 }
 
-p, ul, li, label, input, header, footer, nav {
+p, b, span, div {
+// 	.secondaryFontFamily;
+	color: @primaryTextColor;
+}
+
+ul, li, label, input, header, footer, nav {
 	.primaryFontFamily;
 	color: @primaryTextColor;
 } 
