@@ -5,11 +5,11 @@ var WebpackNotifierPlugin = require('webpack-notifier');
 
 module.exports = {
 	entry: ['webpack/hot/dev-server', path.resolve(__dirname, 'app/main.js')],
-	resolve: {
-		alias: {
-			'react': pathToReact //loads react.min.js making dev builds faster
-		}
-	},
+	// resolve: {
+	// 	alias: {
+	// 		'react': pathToReact //loads react.min.js making dev builds faster
+	// 	}
+	// },
 	// plugins: [
 	// 	new WebpackNotifierPlugin()
 	// ],
@@ -35,7 +35,7 @@ module.exports = {
                 loader: "file" },
             { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
 			{ test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
-    	],
-    	noParse: [pathToReact]
+    	]
+    	// noParse: [pathToReact]
   	}
 }

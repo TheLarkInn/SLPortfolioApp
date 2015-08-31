@@ -12,7 +12,7 @@ export default class SLContactView extends React.Component {
 
 	render() {
 		return (
-			<div clasName='sl-contact-view'>
+			<div className='sl-contact-view'>
 				<h3>CONTACT</h3>
 			</div>
 		);

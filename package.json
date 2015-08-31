@@ -41,6 +41,7 @@
     "font-awesome-webpack": "0.0.3",
     "less": "^2.5.1",
     "less-loader": "^2.2.0",
+    "react-router": "^0.13.3",
     "webpack-dev-server": "^1.10.1"
   }
 }

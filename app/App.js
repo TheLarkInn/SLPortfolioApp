@@ -24,10 +24,9 @@ export default class App extends React.Component {
 				<header className='sl-portfolio-app--header'>
 					<SLNavBar onNavChanged={this.updateSlideIndex.bind(this)} activeNavIndex={this.state.activeSlideIndex} />
 				</header>
-				<SLMainContent onSlideChange={this.updateSlideIndex.bind(this)} activeSlideIndex={this.state.activeSlideIndex}/>
+				<SLMainContent />
 				<SLFooter />	
 			</div>
 		);
 	}
-
 }

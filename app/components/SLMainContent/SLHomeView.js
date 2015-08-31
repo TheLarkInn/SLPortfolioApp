@@ -12,12 +12,12 @@ export default class SLHomeView extends React.Component {
 
 	render() {
 		return (
-			<div clasName='sl-home-view'>
+			<div className='sl-home-view'>
 				<h1 className='sl-main-content--header'>
 					<strong>WEB DEVELOPER</strong><span className='sl-main-content--header_accent'>&</span> SOFTWARE ENGINEER
 				</h1>
 
-				<SLButton buttonText='LEARN MY STORY' onClick={this._navigateToMyStory} />
+				<SLButton buttonText='LEARN MY STORY' onClick={this._navigateToMyStory} to='about' />
 			</div>
 		);
 	}

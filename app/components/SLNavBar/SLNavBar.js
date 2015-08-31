@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 export default class SLNavBar extends React.Component {
 	constructor(props) {
@@ -9,24 +10,16 @@ export default class SLNavBar extends React.Component {
 		};
 	}
 
-	_navItemWasSelected(index, event) {
-		event.preventDefault();
-		this.props.onNavChanged(index);
-	}
-
 	render() {
-		let navItems = ['HOME', 'ABOUT', 'WORK', 'CONTACT'].map( (item, index) => {
-			let activeClass = '';
-			if (this.props.activeNavIndex == index) {
-				activeClass = 'sl-button__active';
-			}
+		let navItems = ['home', 'about', 'work', 'contact'].map( (item, index) => {
+
 			return (
-				<a  href='' 
+				<Link 
+					to={item} 
                     key={index} 
-                    onClick={this._navItemWasSelected.bind(this, index)} 
-                    className={'sl-navbar--item sl-button_nav-button ' + activeClass}>
-					{item}
-				</a>
+                    className={'sl-navbar--item sl-button_nav-button '}>
+					{item.toUpperCase()}
+				</Link>
 			);
 		});
 
