@@ -18,10 +18,17 @@ var routes = (
   </Route>
 );
 
-Router.run(routes, function (Handler) {
+var rootInstance = Router.run(routes, function (Handler) {
   React.render(<Handler/>, document.getElementById('app'));
 });
 
+if (module.hot) {
+	require('react-hot-loader/Injection').RootInstanceProvider.injectProvider({
+		getRootInstances: function() {
+			return [rootInstance];
+		}
+	});
+}
 
 
 // React.render(<App />, document.getElementById('app'));
